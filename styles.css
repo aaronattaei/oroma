@@ -16,6 +16,11 @@ body {
     /* 100 view heights, 100% of the height of the screen as minimum  */
 }
 
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
 .brand-logo {
     display: flex;
     align-items: center;
