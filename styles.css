@@ -23,8 +23,8 @@ body {
 
 .brand-logo {
     display: flex;
-    width: 60px;
-    height: auto;
+    width: 6px;
+    height: 6px;
     align-items: center;
     font-size: 1.25em;
     color: inherit;
