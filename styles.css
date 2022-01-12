@@ -11,6 +11,9 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 1.2rem;
     color: white;
+
+    min-height: 100vh;
+    /* 100 view heights, 100% of the height of the screen as minimum  */
 }
 
 .brand-logo {
