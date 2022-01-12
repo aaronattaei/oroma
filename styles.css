@@ -33,28 +33,43 @@ body {
     margin-left: 1rem;
 }
 
-.main-nav ul {
+.main-nav ul, .footer-nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.main-nav a {
+.main-nav a, .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, .footer-nav a:hover {
     color: #ADADAD;
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 140px;
+}
+
+.main-header {
+    height: 140px;
+}
+
+.main-footer {
+    height: 70px;
+    background-color: #784146;
+    font-weight: bold;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
