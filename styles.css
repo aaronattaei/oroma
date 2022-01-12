@@ -67,6 +67,11 @@ body {
     font-weight: bold;
 }
 
+.social-link img {
+    width: 1em;
+    margin-right: .25rem;
+}
+
 .main-footer .container {
     display: flex;
     justify-content: space-between;
