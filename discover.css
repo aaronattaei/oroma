@@ -11,3 +11,24 @@
     height: auto;
     max-width: 350px;
 }
+
+.icon-section {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    padding: .75rem;
+    width: 100px;
+    height: 100px;
+    background-color: #784146;
+    margin-bottom: 2rem;
+}
+
+.icon img {
+    width: 40px;
+}
