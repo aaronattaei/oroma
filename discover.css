@@ -32,3 +32,16 @@
 .icon img {
     width: 40px;
 }
+
+@media (max-width: 800px) {
+    .discover-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .discover-main-section .covers-image {
+        margin-top: 2rem;
+        height: 30vh;
+        width: auto;
+    }
+}
