@@ -12,12 +12,12 @@
 }
 
 .accent-text {
-    color: blueviolet;
+    color: #debea0;
 }
 
 .join-form {
-    background-color: darkorchid;
-    border-block-end-width: 50vw;
+    background-color: #8a474f;
+    width: 50vw;
     max-width: 50%;
     padding: 2rem 4rem;
     border-radius: 20px;
@@ -41,7 +41,7 @@
 .input-group input {
     outline: none;
     background: none;
-    border: 1px solid #2e3752;
+    border: 1px solid #784146;
     font-size: 1em;
     padding: .5em;
     color: inherit;
@@ -49,7 +49,7 @@
 }
 
 .input-group input:focus {
-    border-color: #596da0;
+    border-color: #a4545f;
 }
 
 @media (max-width: 900px) {
@@ -83,7 +83,7 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: rgba(188, 58, 128,.1);
+    background-color: rgba(0, 0, 255,.1);
 }
 
 .join-page-circle-2 {
@@ -92,33 +92,13 @@
     width: 30vw;
     height: 30vw;
     top: 0;
-    left: 20vw;
+    left: 30vw;
     z-index: -1;
 }
 
 .join-page-circle-2::before {
     content: '';
     transform: translateY(-30%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: rgba(52, 87, 178,.1);
-}
-
-.home-page-circle-3 {
-    position: absolute;
-    overflow: hidden;
-    width: 45vw;
-    height: 45vw;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-
-.home-page-circle-3::before {
-    content: '';
-    transform: translate(40%, 40%);
     position: absolute;
     height: 100%;
     width: 100%;
