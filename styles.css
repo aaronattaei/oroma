@@ -30,7 +30,7 @@ body {
 }
 
 .brand-logo-name {
-    margin-left: 1rem;
+    margin: auto;
 }
 
 .main-nav ul, .footer-nav ul {
@@ -115,4 +115,21 @@ body {
 
 .btn:focus {
     background-color: #a03c44;
+}
+
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.nav {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+.one .two .three{
+    width: 30px;
 }
