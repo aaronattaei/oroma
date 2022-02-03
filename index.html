@@ -12,59 +12,92 @@
     <title>oroma</title>
 </head>
 
-<body class="container full-height-grow">
+<body>
+    <div class="page-container"> 
+        
+        <div id="side-bar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            
+                <a href="discover.html" class="sidebar__link">Coffee</a>
+                <a href="discover.html" class="sidebar__link">Tea</a>
+                <a href="discover.html" class="sidebar__link">More</a>
+        </div>
 
-    <div class="sidebar">
-        <ul>
-            <li>
-                <a href="#">
-                    <span> </span> 
+        <div id="content-area">
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>  
 
+            <div class="content-text">
+                <h2 >Toggle Sidebar Navigation</h2>
+                <h3>html css javascript</h3>
+            </div>
+
+        </div>
+
+        <script>
+          
+            function openNav() {
+            document.getElementById("side-bar").style.width = "300px";
+            document.getElementById("content-area").style.marginLeft = "300px";
+            }
+            
+
+            function closeNav() {
+            document.getElementById("side-bar").style.width = "0";
+            document.getElementById("content-area").style.marginLeft = "0";
+            }
+
+
+
+        </script>
+
+        <main class="container full-height-grow">
+
+            <header class="main-header">
+
+                <div class="wrapper" onclick="openNav()"> 
+                    <a href="#" class="nav">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </a>
+                </div> 
+
+                <a href=".html" class="brand-logo">
+                    <img src="images/logo.png"
+                        width="60"
+                        height="60"/> 
+                    <div class="brand-logo-name">oroma</div>
                 </a>
-            </li>
-        </ul>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="home-main-section">
+                <div class="img-wrapper"> 
+                    <div class="lady-image"></div>
+                </div>
+
+                <div class="call-to-action">
+                    <h1 class="title"> Feel the Music</h1>
+                    <span class="subtitle">Stream over 20 thousand sonds with one click</span>
+                    <a href="join.html" class="btn">Join Now</a>
+                </div>
+
+            </section>
+
+            <div class="home-page-circle-1"></div>
+            <div class="home-page-circle-2"></div>
+            <div class="home-page-circle-3"></div>
+        
+        </main>
+
+        
     </div>
-
-    <header class="main-header">
-
-        <div class="wrapper"> 
-            <a href="#" class="nav">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </a>
-        </div> 
-
-        <a href=".html" class="brand-logo">
-            <img src="images/logo.png"
-                 width="60"
-                 height="60"/> 
-            <div class="brand-logo-name">oroma</div>
-        </a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="home-main-section">
-        <div class="img-wrapper"> 
-            <div class="lady-image"></div>
-        </div>
-
-        <div class="call-to-action">
-            <h1 class="title"> Feel the Music</h1>
-            <span class="subtitle">Stream over 20 thousand sonds with one click</span>
-            <a href="join.html" class="btn">Join Now</a>
-        </div>
-
-    </section>
-
-    <div class="home-page-circle-1"></div>
-    <div class="home-page-circle-2"></div>
-    <div class="home-page-circle-3"></div>
 
 </body>
 
