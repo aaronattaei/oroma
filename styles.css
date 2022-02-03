@@ -30,11 +30,6 @@ body {
     overflow-y: auto;
 }
 
-.full-height-grow {
-    display: flex;
-    flex-direction: column;
-}
-
 .brand-logo {
     display: flex;
     align-items: center;
