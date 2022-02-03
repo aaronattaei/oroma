@@ -1,0 +1,106 @@
+<!--COFFEE.HTML, HOME PAGE-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="coffee.css" rel="stylesheet">
+    <title>oroma</title>
+</head>
+
+<body>
+    <div class="page-container"> 
+        
+        <div id="side-bar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+
+                <div class="sidebar-text"> 
+                    <a href="coffee.html" class="sidebar-titles">coffee</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">french press</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">pour over</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">drip</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">moka pot</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">espresso</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">turkish</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">siphon</a>
+                        <hr class="between" />
+                    <a href="tea.html" class="sidebar-titles">tea & more</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">tea bag</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">loose leaf</a>
+                        <hr class="between" />
+                    <a href=".html" class="sidebar-subtitles">fruit tea/infusion</a>
+                        <hr class="between" />
+                </div>
+        </div>
+
+        <main id="content-area" class="container full-height-grow">
+
+            <header class="main-header">
+
+                <div onclick="openNav()"> 
+                    <a href="#" class="nav">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </a>
+                </div> 
+
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.png"
+                        height="55"/> 
+                    <div class="brand-logo-name">oroma</div>
+                </a>
+
+                <a href="#">
+                    <img src="images/heart.png"
+                        height="40"/> 
+                </a>
+
+            </header>
+
+
+        </main>
+
+        <script>
+          
+            function openNav() {
+
+                if (window.innerWidth < 600) {
+                    document.getElementById("side-bar").style.width = "100%";
+                    document.getElementById("content-area").style.marginLeft = "100%";
+                }
+                else {
+                    document.getElementById("side-bar").style.width = "300px";
+                    document.getElementById("content-area").style.marginLeft = "300px";
+                }
+            
+            }
+            
+
+            function closeNav() {
+            document.getElementById("side-bar").style.width = "0";
+            document.getElementById("content-area").style.marginLeft = "0";
+            }
+
+
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
