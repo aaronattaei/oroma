@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="coffee.css" rel="stylesheet">
+    <title>Coffee - Pour Over</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="images/appicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/appicon.png">
+</head>
+
+<body>
+
+    <div class="main-header">  
+
+        <div onclick="openNav()"> 
+            <a href="javascript:void(0)" class="nav">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+            
+        </div> 
+        
+        
+
+        <a href="index.html" class="brand-logo">
+            <img src="images/logo.png"
+                height="55"/> 
+            <div class="brand-logo-name">oroma</div>
+        </a>
+
+        <a href="#">
+            <img src="images/heart.png"
+                height="40"/> 
+        </a>
+        
+
+    </div>
+
+    <div class="page-container"> 
+        
+        
+        <div id="side-bar-overlay" class="side-bar-overlay"></div>
+
+
+
+        <div id="side-bar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+
+                <div class="sidebar-text"> 
+                    <a href="coffee.html" class="sidebar-titles">coffee </a>
+                        <hr class="between" />
+                    <a href="frenchpress.html" class="sidebar-subtitles">french press</a>
+                        <hr class="between" />
+                    <a href="pourover.html" class="sidebar-subtitles">pour over</a>
+                        <hr class="between" />
+                    <a href="drip.html" class="sidebar-subtitles">drip</a>
+                        <hr class="between" />
+                    <a href="mokapot.html" class="sidebar-subtitles">moka pot</a>
+                        <hr class="between" />
+                    <a href="espresso.html" class="sidebar-subtitles">espresso</a>
+                        <hr class="between" />
+                    <a href="turkish.html" class="sidebar-subtitles">turkish</a>
+                        <hr class="between" />
+                    <a href="siphon.html" class="sidebar-subtitles">siphon</a>
+                        <hr class="between" />
+                    <a href="tea.html" class="sidebar-titles">tea & more</a>
+                        <hr class="between" />
+                    <a href="teabag.html" class="sidebar-subtitles">tea bag</a>
+                        <hr class="between" />
+                    <a href="looseleaf.html" class="sidebar-subtitles">loose leaf</a>
+                        <hr class="between" />
+                    <a href="fruittea.html" class="sidebar-subtitles">fruit tea/infusion</a>
+                        <hr class="between" />
+                </div>
+        </div>
+
+
+        <main id="content-area" class="container">
+
+            <div id="side-bar-overlay" class="side-bar-overlay"></div>
+
+            <section class="icon-section"> 
+                <h1 class="title">pour over</h1>
+
+            </section>
+
+        </main>
+
+        <script>
+          
+            function openNav() {
+
+                if (window.innerWidth < 700) {
+                    document.getElementById("side-bar").style.width = "100%";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.position = 'sticky';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
+                    
+                }
+                else {
+                    document.getElementById("side-bar").style.width = "300px";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.scrollSnapStop = 'fixed';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
+                }
+            }
+
+            function closeNav() {
+            document.getElementById("side-bar").style.width = "0";
+            document.getElementById("content-area").style.marginLeft = "0";
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.getElementById("side-bar-overlay").style.visibility = "hidden";
+
+            }
+
+        </script>
+
+    </div>
+
+    <div class="main-footer">  
+        <a href="#">About Us</a>      
+    </div>
+    
+
+</body>
+
+</html>

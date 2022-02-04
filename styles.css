@@ -52,6 +52,7 @@ body {
     width: 100%;
     height: 80px;
     z-index: 3;
+    padding-right: 15px;
 }
 
 .main-footer {
@@ -63,6 +64,7 @@ body {
 
     justify-content: space-between;
     align-items: center;
+    bottom: 0;
     
 }
 .main-footer a {
@@ -79,7 +81,6 @@ body {
 .main-footer .container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .container {
@@ -192,8 +193,10 @@ body {
     display: block;
     text-align: center;
     justify-content: space-between;
+}
 
-    
+.icon-section a {
+    text-decoration: none;
 }
 
 .title {
