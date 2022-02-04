@@ -1,4 +1,4 @@
-<!--TEA.HTML, HOME PAGE-->
+<!--INDEX.HTML, HOME PAGE-->
 
 
 <!DOCTYPE html>
@@ -8,69 +8,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link href="tea.css" rel="stylesheet">
-    <title>oroma</title>
+    <link href="index.css" rel="stylesheet">
+    <title>Oroma - Tea</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="images/appicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/appicon.png">
 </head>
 
 <body>
+
+    <div class="main-header">  
+
+        <div onclick="openNav()"> 
+            <a href="javascript:void(0)" class="nav">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+            
+        </div> 
+        
+        
+
+        <a href="index.html" class="brand-logo">
+            <img src="images/logo.png"
+                height="55"/> 
+            <div class="brand-logo-name">oroma</div>
+        </a>
+
+        <a href="#">
+            <img src="images/heart.png"
+                height="40"/> 
+        </a>
+        
+
+    </div>
+
     <div class="page-container"> 
         
+        
+        <div id="side-bar-overlay" class="side-bar-overlay"></div>
+
+
+
         <div id="side-bar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
 
                 <div class="sidebar-text"> 
-                    <a href="coffee.html" class="sidebar-titles">coffee</a>
+                    <a href="coffee.html" class="sidebar-titles">coffee </a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">french press</a>
+                    <a href="frenchpress.html" class="sidebar-subtitles">french press</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">pour over</a>
+                    <a href="pourover.html" class="sidebar-subtitles">pour over</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">drip</a>
+                    <a href="drip.html" class="sidebar-subtitles">drip</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">moka pot</a>
+                    <a href="mokapot.html" class="sidebar-subtitles">moka pot</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">espresso</a>
+                    <a href="espresso.html" class="sidebar-subtitles">espresso</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">turkish</a>
+                    <a href="turkish.html" class="sidebar-subtitles">turkish</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">siphon</a>
+                    <a href="siphon.html" class="sidebar-subtitles">siphon</a>
                         <hr class="between" />
                     <a href="tea.html" class="sidebar-titles">tea & more</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">tea bag</a>
+                    <a href="teabag.html" class="sidebar-subtitles">tea bag</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">loose leaf</a>
+                    <a href="looseleaf.html" class="sidebar-subtitles">loose leaf</a>
                         <hr class="between" />
-                    <a href=".html" class="sidebar-subtitles">fruit tea/infusion</a>
+                    <a href="fruittea.html" class="sidebar-subtitles">fruit tea/infusion</a>
                         <hr class="between" />
                 </div>
         </div>
 
-        <main id="content-area" class="container full-height-grow">
 
-            <header class="main-header">
+        <main id="content-area" class="container">
 
-                <div onclick="openNav()"> 
-                    <a href="#" class="nav">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </a>
-                </div> 
+            <div id="side-bar-overlay" class="side-bar-overlay"></div>
 
-                <a href="index.html" class="brand-logo">
-                    <img src="images/logo.png"
-                        height="55"/> 
-                    <div class="brand-logo-name">oroma</div>
-                </a>
+            <section class="icon-section"> 
+                <h1 class="title">tea & more</h1>
 
-                <a href="#">
-                    <img src="images/heart.png"
-                        height="40"/> 
-                </a>
+                    <div class="coffee-icons-wrapper">
 
-            </header>
+                        <div class="icon-container">
+                            <img src="images/tea/teabag.png"
+                                height="100"/>
+                            <div class="overlay">
+                              <div class="overlay-text">tea bag</div>
+                            </div>
+                        </div>
 
+                        <div class="icon-container">
+                            <img src="images/tea/looseleaf.png"
+                                height="100"/>
+                            <div class="overlay">
+                              <div class="overlay-text">loose leaf</div>
+                            </div>
+                        </div>
+
+                        <div class="icon-container">
+                            <img src="images/tea/fruittea.png"
+                                height="100"/>
+                            <div class="overlay">
+                              <div class="overlay-text">fruit tea</div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
 
         </main>
 
@@ -78,28 +124,41 @@
           
             function openNav() {
 
-                if (window.innerWidth < 600) {
+                if (window.innerWidth < 700) {
                     document.getElementById("side-bar").style.width = "100%";
-                    document.getElementById("content-area").style.marginLeft = "100%";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.position = 'sticky';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
+                    
                 }
                 else {
                     document.getElementById("side-bar").style.width = "300px";
-                    document.getElementById("content-area").style.marginLeft = "300px";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.scrollSnapStop = 'fixed';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
                 }
-            
             }
-            
 
             function closeNav() {
             document.getElementById("side-bar").style.width = "0";
             document.getElementById("content-area").style.marginLeft = "0";
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.getElementById("side-bar-overlay").style.visibility = "hidden";
+
             }
-
-
 
         </script>
 
     </div>
+
+    <div class="main-footer">  
+        <a href="#">About Us</a>      
+    </div>
+    
 
 </body>
 
