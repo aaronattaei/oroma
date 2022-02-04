@@ -13,13 +13,46 @@
 </head>
 
 <body>
+
+    <div class="main-header">  
+
+        <div onclick="openNav()"> 
+            <a href="javascript:void(0)" class="nav">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+            
+        </div> 
+        
+        
+
+        <a href="index.html" class="brand-logo">
+            <img src="images/logo.png"
+                height="55"/> 
+            <div class="brand-logo-name">oroma</div>
+        </a>
+
+        <a href="#">
+            <img src="images/heart.png"
+                height="40"/> 
+        </a>
+        
+
+    </div>
+
     <div class="page-container"> 
         
+        
+        <div id="side-bar-overlay" class="side-bar-overlay"></div>
+
+
+
         <div id="side-bar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
 
                 <div class="sidebar-text"> 
-                    <a href="coffee.html" class="sidebar-titles">coffee</a>
+                    <a href="coffee.html" class="sidebar-titles">coffee </a>
                         <hr class="between" />
                     <a href=".html" class="sidebar-subtitles">french press</a>
                         <hr class="between" />
@@ -46,30 +79,10 @@
                 </div>
         </div>
 
+
         <main id="content-area" class="container">
 
-            <header class="main-header">
-
-                <div onclick="openNav()"> 
-                    <a href="#" class="nav">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </a>
-                </div> 
-
-                <a href="index.html" class="brand-logo">
-                    <img src="images/logo.png"
-                        height="55"/> 
-                    <div class="brand-logo-name">oroma</div>
-                </a>
-
-                <a href="#">
-                    <img src="images/heart.png"
-                        height="40"/> 
-                </a>
-
-            </header>
+            <div id="side-bar-overlay" class="side-bar-overlay"></div>
 
             <section class="icon-section"> 
                 <h1 class="title">coffee</h1>
@@ -175,57 +188,46 @@
                     </div>
             </section>
 
-            <footer class="main-footer">
-                <div class="container">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="footer-nav">
-                        <ul>
-                            <li>
-                                <a href="#" class="social-link">
-                                    <img src="">Twitter
-                                </a>
-                            </li>
-        
-                            <li>
-                                <a href="#" class="social-link">
-                                    <img src="">Facebook
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>    
-            </footer>
-
         </main>
 
         <script>
           
             function openNav() {
 
-                if (window.innerWidth < 600) {
+                if (window.innerWidth < 700) {
                     document.getElementById("side-bar").style.width = "100%";
-                    document.getElementById("content-area").style.marginLeft = "100%";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.position = 'sticky';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
+                    
                 }
                 else {
                     document.getElementById("side-bar").style.width = "300px";
-                    document.getElementById("content-area").style.marginLeft = "300px";
+                    document.getElementById("content-area").style.overflow = "hidden";
+                    document.body.style.scrollSnapStop = 'fixed';
+                    document.body.style.top = `-${window.scrollY}px`;
+                    document.getElementById("side-bar-overlay").style.visibility = "visible";
                 }
             }
 
             function closeNav() {
             document.getElementById("side-bar").style.width = "0";
             document.getElementById("content-area").style.marginLeft = "0";
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.getElementById("side-bar-overlay").style.visibility = "hidden";
+
             }
 
         </script>
 
     </div>
 
+    <div class="main-footer">  
+        <a href="#">About Us</a>      
+    </div>
     
 
 </body>
