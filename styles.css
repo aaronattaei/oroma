@@ -199,11 +199,78 @@ body {
     text-decoration: none;
 }
 
+.instructions-section {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.instructions-section a {
+    text-decoration: none;
+
+}
+
 .title {
     font-family: Raleway;
     font-size: 32px;
     font-weight: normal;
     color: white;
+}
+
+.subtitle {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.textbox {
+    width: 60vw;
+    text-align: left;
+    display: inline-block;
+
+    margin: auto;
+    width: 80vw;
+
+    position: relative;
+    background-color: inherit;
+}
+
+.materials {
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 80vw;
+    text-align: left;
+
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    color: #695883;
+    
+}
+
+.instructions-number{
+    padding-left: 20px;
+}
+
+.instructions-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #a4545f;
+}
+
+.materials-item {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 0px 10px 20px;
+}
+
+.materials-item p{
+    padding-left: 20px;
 }
 
 .coffee-icons-wrapper {

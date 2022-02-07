@@ -10,6 +10,7 @@
     <title>Coffee - French Press</title>
     <link rel="icon" type="image/png" sizes="64x64" href="images/appicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/appicon.png">
+    <script src="Navscript.js"></script>
 </head>
 
 <body>
@@ -25,8 +26,6 @@
             
         </div> 
         
-        
-
         <a href="index.html" class="brand-logo">
             <img src="images/logo.png"
                 height="55"/> 
@@ -45,8 +44,6 @@
         
         
         <div id="side-bar-overlay" class="side-bar-overlay"></div>
-
-
 
         <div id="side-bar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
@@ -79,50 +76,85 @@
                 </div>
         </div>
 
-
         <main id="content-area" class="container">
 
-            <div id="side-bar-overlay" class="side-bar-overlay"></div>
-
-            <section class="icon-section"> 
+            <section class="instructions-section"> 
                 <h1 class="title">french press</h1>
 
-            </section>
-
-        </main>
-
-        <script>
-          
-            function openNav() {
-
-                if (window.innerWidth < 700) {
-                    document.getElementById("side-bar").style.width = "100%";
-                    document.getElementById("content-area").style.overflow = "hidden";
-                    document.body.style.position = 'sticky';
-                    document.body.style.top = `-${window.scrollY}px`;
-                    document.getElementById("side-bar-overlay").style.visibility = "visible";
+                <div class="textbox"> 
                     
-                }
-                else {
-                    document.getElementById("side-bar").style.width = "300px";
-                    document.getElementById("content-area").style.overflow = "hidden";
-                    document.body.style.scrollSnapStop = 'fixed';
-                    document.body.style.top = `-${window.scrollY}px`;
-                    document.getElementById("side-bar-overlay").style.visibility = "visible";
-                }
-            }
+                    <h2 class="subtitle">benefits</h2>
 
-            function closeNav() {
-            document.getElementById("side-bar").style.width = "0";
-            document.getElementById("content-area").style.marginLeft = "0";
-            const scrollY = document.body.style.top;
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.getElementById("side-bar-overlay").style.visibility = "hidden";
+                    <p>
+                        Coffee was founded in Oromo, Africa in 1XXX. It can be found all over the world and in different ways. Coffee was founded in Oromo, Africa in 1XXX. It can be found all over the world and in different ways. Coffee was founded in Oromo, Africa in 1XXX. It can be found all over the world and in different ways. 
+                    </p>
 
-            }
+                </div>
 
-        </script>
+                <div class="materials">
+
+                    <h3 class="instructions-number">what you need</h3>
+                    
+                    <div class="materials-item"> 
+                        <img src="images/coffee/frenchpress/frenchpress.png"
+                                    height="70"/>
+                        <p>french/coffee press</p>
+                    </div>
+                    <div class="materials-item"> 
+                        <img src="images/coffee/frenchpress/grindscourse.png"
+                                    height="70"/>
+                        <p>ground coffee (course setting)</p>
+                    </div>
+                    <div class="materials-item"> 
+                        <img src="images/coffee/frenchpress/kettle.png"
+                                    height="70"/>
+                        <p>kettle</p>
+                    </div>
+
+                </div>
+
+                <div class="materials">
+
+                    <h3 class="instructions-number">01</h3>
+                    
+                    <p class="instructions-text">Boil the water, making sure to have enough for your french press</p>
+
+                </div>
+
+                <div class="materials">
+
+                    <h3 class="instructions-number">02</h3>
+                    
+                    <p class="instructions-text">Add the ground coffee (2 tbsp coffee per 6 oz or 175 mL water) to the french press</p>
+
+                </div>
+
+                <div class="materials">
+
+                    <h3 class="instructions-number">03</h3>
+                    
+                    <p class="instructions-text">Let your boiling water slighlty cool, then pour in the desired amount of water in with the coffee grinds, with a spoon, give the coffee and water a stir</p>
+
+                </div>
+
+                <div class="materials">
+
+                    <h3 class="instructions-number">04</h3>
+                    
+                    <p class="instructions-text">Without depressing the plunger yet, set the plunger on top of the grounds and set a timer for 4 minutes</p>
+
+                </div>
+
+                <div class="materials">
+
+                    <h3 class="instructions-number">05</h3>
+                    
+                    <p class="instructions-text">After 4 minutes has passed, slowly depress the plunger and serve immediately</p>
+
+                </div>
+
+            </section>
+        </main>
 
     </div>
 

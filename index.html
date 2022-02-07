@@ -12,6 +12,7 @@
     <title>Oroma</title>
     <link rel="icon" type="image/png" sizes="64x64" href="images/appicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/appicon.png">
+    <script src="Navscript.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,6 @@
             </a>
             
         </div> 
-        
-        
 
         <a href="index.html" class="brand-logo">
             <img src="images/logo.png"
@@ -38,17 +37,13 @@
         <a href="#">
             <img src="images/heart.png"
                 height="40"/> 
-        </a>
-        
+        </a>    
 
     </div>
 
-    <div class="page-container"> 
-        
+    <div class="page-container">    
         
         <div id="side-bar-overlay" class="side-bar-overlay"></div>
-
-
 
         <div id="side-bar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
@@ -81,10 +76,7 @@
                 </div>
         </div>
 
-
         <main id="content-area" class="container">
-
-            <div id="side-bar-overlay" class="side-bar-overlay"></div>
 
             <section class="icon-section"> 
                 <a href="coffee.html"> <h1 class="title">coffee</h1> </a>
@@ -214,38 +206,6 @@
 
         </main>
 
-        <script>
-          
-            function openNav() {
-
-                if (window.innerWidth < 700) {
-                    document.getElementById("side-bar").style.width = "100%";
-                    document.getElementById("content-area").style.overflow = "hidden";
-                    document.body.style.position = 'sticky';
-                    document.body.style.top = `-${window.scrollY}px`;
-                    document.getElementById("side-bar-overlay").style.visibility = "visible";
-                    
-                }
-                else {
-                    document.getElementById("side-bar").style.width = "300px";
-                    document.getElementById("content-area").style.overflow = "hidden";
-                    document.body.style.scrollSnapStop = 'fixed';
-                    document.body.style.top = `-${window.scrollY}px`;
-                    document.getElementById("side-bar-overlay").style.visibility = "visible";
-                }
-            }
-
-            function closeNav() {
-            document.getElementById("side-bar").style.width = "0";
-            document.getElementById("content-area").style.marginLeft = "0";
-            const scrollY = document.body.style.top;
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.getElementById("side-bar-overlay").style.visibility = "hidden";
-
-            }
-
-        </script>
 
     </div>
 
