@@ -272,6 +272,8 @@ body {
 .instructions-image {
     display: flex;
     margin: auto;
+    width: 22vw;
+    max-width: 170px;
 }
 
 .coffee-icons-wrapper {
