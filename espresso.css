@@ -1,0 +1,29 @@
+.espresso-types {
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+
+    position: relative;
+    background-color: inherit;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr) );
+    gap: 20px;
+    color: #362247;
+}
+
+.espresso-drinks {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.espresso-drinks-image {
+    display: flex;
+    margin: auto;
+    width: 22vw;
+    max-width: 120px;
+}
+
+.espresso-drinks-text {
+        text-align: center;
+}
