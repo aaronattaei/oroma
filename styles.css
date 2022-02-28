@@ -21,6 +21,7 @@ body {
 .page-container {
     height: inherit;
     display: flex;
+    min-height: 85vh;
 }
 
 .main {
@@ -310,7 +311,7 @@ body {
     position: absolute;
     border-radius: inherit;
     top: 0;
-    bottom: 0;
+    bottom: 0;;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -334,4 +335,17 @@ body {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.error-section {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.error-image{
+    width: 22vw;
+    max-width: 600px;
 }
