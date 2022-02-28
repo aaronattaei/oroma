@@ -336,16 +336,3 @@ body {
     width: 100%;
     height: auto;
 }
-
-.error-section {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    padding-top: 100px;
-    width: 100%;
-}
-
-.error-image{
-    width: 22vw;
-    max-width: 600px;
-}

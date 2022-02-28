@@ -1,0 +1,19 @@
+.error-section {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.error-section a {
+    color:inherit;
+}
+
+
+.error-image{
+    margin: auto;
+    margin-top: 20px;
+    width: 40vw;
+    max-width: 500px;
+}
