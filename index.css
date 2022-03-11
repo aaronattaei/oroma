@@ -1,0 +1,43 @@
+
+.landing-section {
+    display: block;
+    text-align:left;
+    justify-content: space-between;
+}
+
+.landing-intro {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width: 80vw;
+
+    position: relative;
+    background-color: #da959bb6;
+
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.landing-intro-text{
+    margin-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.landing-intro-heading{
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.landing-graphic{
+    position: absolute;
+}
+
+.landing-intro img{
+    width: 100%;
+    opacity: 0.2;
+}
