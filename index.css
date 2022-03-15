@@ -7,7 +7,7 @@
 
 .landing-intro {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     border-radius: 20px;
     width: 80vw;
@@ -27,15 +27,25 @@
     z-index: 1;
 }
 
+.landing-intro-text p{
+    margin: 5px;
+}
+
 .landing-intro-heading{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10px;
     margin-right: 40px;
 }
 
 .landing-intro-subheading{
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
+}
+
+.landing-intro-hooks{
+    font-size: 25px;
+    position: relative;
+    font-weight: normal;
 }
 
 .landing-graphic{
@@ -45,5 +55,22 @@
 
 .landing-intro img{
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.15;
+}
+
+.about-us-button {
+    background-color: #695883; 
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+.about-us-button:hover {
+    background-color: #362247; 
+    color: white;
 }
