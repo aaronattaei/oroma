@@ -10,13 +10,33 @@
 
 }
 
+.about-us-box {
+
+    margin: auto;
+
+    border-radius: 20px;
+    width: 80vw;
+
+    position: relative;
+
+
+    display:flex;
+    overflow: hidden;
+
+    align-items: center;
+}
+
+
 .about-us-text {
+
     width: 60vw;
     text-align: left;
     display: inline-block;
 
     margin: auto;
-    width: 80vw;
+    margin-right: 50px;
+    margin-left: 50px;
+
 
     position: relative;
     background-color: inherit;
@@ -24,4 +44,13 @@
 
 .about-us-text h3{
     margin-top: 50px;
+}
+
+.about-us-image{
+    object-fit: contain;
+}
+
+.about-us-image img{
+    width:20vw;
+
 }
