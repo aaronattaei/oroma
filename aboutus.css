@@ -9,3 +9,19 @@
     text-decoration: none;
 
 }
+
+.about-us-text {
+    width: 60vw;
+    text-align: left;
+    display: inline-block;
+
+    margin: auto;
+    width: 80vw;
+
+    position: relative;
+    background-color: inherit;
+}
+
+.about-us-text h3{
+    margin-top: 50px;
+}

@@ -7,7 +7,7 @@
 
 .landing-intro {
     margin: auto;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 50px;
     border-radius: 20px;
     width: 80vw;
@@ -35,6 +35,7 @@
     font-size: 50px;
     margin-top: 10px;
     margin-right: 40px;
+    margin-bottom: 0;
 }
 
 .landing-intro-subheading{
@@ -48,6 +49,10 @@
     font-weight: normal;
 }
 
+.landing-intro-hooks p {
+    margin-bottom: 10px;
+}
+
 .landing-graphic{
     position: absolute;
     z-index: 0;
@@ -56,6 +61,12 @@
 .landing-intro img{
     width: 100%;
     opacity: 0.15;
+}
+
+.about-us-text{
+    font-size: 20px;
+    position: relative;
+    font-weight: normal;
 }
 
 .about-us-button {
